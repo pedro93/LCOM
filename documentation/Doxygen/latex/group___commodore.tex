@@ -1,0 +1,741 @@
+\hypertarget{group___commodore}{\section{Commmodore}
+\label{group___commodore}\index{Commmodore@{Commmodore}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___commodore_ga0a8c6c066c745d104c5eb0537c8ef0e3}{draw\-\_\-sprite} (int x, int y, \hyperlink{struct_sprite}{Sprite} $\ast$spr)
+\begin{DoxyCompactList}\small\item\em draws a sprite $\ast$spr at the parameter position of the screen \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga6363620f1e84e9d16a634beea93c207a}{draw\-\_\-outline} (int x, int y, int width, int height, unsigned long color)
+\begin{DoxyCompactList}\small\item\em Draws an outline with a pixel thick of the color desired,starting at position (x,y) \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gace9f03f02d80c9da290785c2cbb10a85}{draw\-\_\-square} (int x, int y, int width, int height, unsigned color)
+\begin{DoxyCompactList}\small\item\em Draws a square at position (x,y),with the width,height and color specified as argument. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gab5c2a991d5fe4e74e967ef1696079672}{draw\-\_\-player1\-\_\-board} ()
+\begin{DoxyCompactList}\small\item\em Draws the A\-I board where the game is going be played it initializes every position of the A\-I\-\_\-board structure it initializes every position of the A\-I\-\_\-board\-\_\-aux with the I\-D 0. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga7a65bf64332562c5b8f84ca66e8521a7}{draw\-\_\-player2\-\_\-board} ()
+\begin{DoxyCompactList}\small\item\em Draws the player1 board where the A\-I is going do is shots it initializes every position of the player1\-\_\-board structure it initializes every position of the player1\-\_\-board\-\_\-aux with the I\-D 0. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga5f0a49f9395c1235c3dc843a13c1f78d}{draw\-\_\-player1\-\_\-board\-\_\-outline} ()
+\begin{DoxyCompactList}\small\item\em Draws the black outline of 5 pixels surronding the A\-I\-\_\-board. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga3466f1bb65e926fc83fca1e51c28b0e0}{draw\-\_\-player2\-\_\-board\-\_\-outline} ()
+\begin{DoxyCompactList}\small\item\em Draws the black outline of 5 pixels surrounding the player1 board. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga9506fb14a5e597cecce754c1baeb64f8}{erase\-\_\-screen} ()
+\begin{DoxyCompactList}\small\item\em Fills all the pixels of the screen with the color blue. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga631033297007a02f7b6c62218f584f64}{draw\-\_\-ships} ()
+\begin{DoxyCompactList}\small\item\em Draws the ships that stand next to each table. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gadd14788da31a0cc5eb8dc65ba1748f2b}{draw\-\_\-players} ()
+\begin{DoxyCompactList}\small\item\em Draws the \char`\"{}player 1\char`\"{} and \char`\"{}computer\char`\"{} sprites on the game. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga59acfff76c01e88a1448d9d50a8a1461}{draw\-\_\-letters\-\_\-numbers} ()
+\begin{DoxyCompactList}\small\item\em Draws the letter and number on the game tables. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga2a0e843767aeea4f433a28b9c54f573a}{menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the initial menu that appears before the game. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gab4fdfb4b8f5979494e57da5386f15bd4}{initialize\-\_\-keyboard\-\_\-cursor} ()
+\begin{DoxyCompactList}\small\item\em Initializes the virtual keyboard cursor at the position (0,0) of the A\-I board. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga4709d1c41c7f8b39baa151b117db805a}{initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu} ()
+\begin{DoxyCompactList}\small\item\em Initializes the virtual keyboard cursor at the menu before the game starts surrounding the \char`\"{}play\char`\"{} word. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga383f6b0dd5befc32a3da3bbe13e182b3}{place\-\_\-\-A\-I\-\_\-ships} ()
+\begin{DoxyCompactList}\small\item\em Function to randomly place the A\-I ships in the A\-I table It updates the information of the A\-I\-\_\-table with 0's and 1's corresponding 0 to water and 1 to a ship It updates the A\-I\-\_\-table\-\_\-aux with the ships I\-D as it puts the ships in the table. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga8ad464df0bdc299f63d9ba4f8c434fa7}{place\-\_\-player1\-\_\-ships} ()
+\begin{DoxyCompactList}\small\item\em Function to randomly place the player1 ships in the player1 table It updates the information of the player1\-\_\-table with 0's and 1's corresponding 0 to water and 1 to a ship It updates the player1\-\_\-table\-\_\-aux with the ships I\-D as it puts the ships in the table. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gae2dc1b15af70aa148fee6092135a8027}{move\-\_\-keyboard\-\_\-cursor} (int value)
+\begin{DoxyCompactList}\small\item\em Moves the virtual keyboard cursor of the player2 table by redrawing the outline in the position desired and making the structure changes need to refresh the x and y saved. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga2f4cdc14245eec40f4c21ff2b1a42190}{check\-\_\-player1\-\_\-destroyed\-\_\-ships} ()
+\begin{DoxyCompactList}\small\item\em Checks if any of the player1 ships has been destroyed and if so draws the ship sprite next to the table as red. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga029a83658f8dc0ea3f744b96b68dfdb4}{check\-\_\-player2\-\_\-destroyed\-\_\-ships} ()
+\begin{DoxyCompactList}\small\item\em Checks if any of the A\-I ships has been destroyed and if so draws the ship sprite next to the table as red. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga3110becf7dc1f5fc702fe102b34400d7}{set\-\_\-volley\-\_\-flag} ()
+\begin{DoxyCompactList}\small\item\em Indicates that the volley special attack was made by the player1. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga8813f78b0a4efd6f12c125064495ed59}{set\-\_\-scout\-\_\-flag} ()
+\begin{DoxyCompactList}\small\item\em Indicates that the scout special attack was made by the player1. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gaa6b0c72b3ee0a3d97a45d38055342398}{set\-\_\-bombardement\-\_\-flag} ()
+\begin{DoxyCompactList}\small\item\em Indicates that the bombardement special attack was made by the player1. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga54fcebfeda2535273c3dd47473e46b5a}{A\-I\-\_\-set\-\_\-volley\-\_\-flag} ()
+\begin{DoxyCompactList}\small\item\em Indicates that the volley special attack was made by the A\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga2be5f22e407ffc7887adf8cc7ba5f54a}{A\-I\-\_\-set\-\_\-scout\-\_\-flag} ()
+\begin{DoxyCompactList}\small\item\em Indicates that the scout special attack was made by the A\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga17552681cdf74f24229557f2cc8056c0}{A\-I\-\_\-set\-\_\-bombardement\-\_\-flag} ()
+\begin{DoxyCompactList}\small\item\em Indicates that the bombardement special attack was made by the A\-I. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gad58b0a5817f6daa4c4de3af8d1c64467}{check\-\_\-square\-\_\-keyboard} ()
+\begin{DoxyCompactList}\small\item\em Checks the square where the virtual keyboard cursor is located after receiving a \char`\"{}enter\char`\"{} scancode. \end{DoxyCompactList}\item 
+int \hyperlink{group___commodore_ga8149c87752bf6329fd86794fd59d6122}{check\-\_\-number\-\_\-of\-\_\-tries} ()
+\begin{DoxyCompactList}\small\item\em Used as the interrupt\-\_\-handler condition terminator. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga6f7ab37f6d84f4bdc562359d8a86aa1f}{initialize\-\_\-\-A\-I\-\_\-shot} ()
+\begin{DoxyCompactList}\small\item\em Initializes the \hyperlink{struct_a_i__shot}{A\-I\-\_\-shot} variable. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga1172507e6403996d29bfd724f618400f}{A\-I\-\_\-turn} ()
+\begin{DoxyCompactList}\small\item\em A\-I engine. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga5ed850743c2cce117572f02bb913ce53}{draw\-\_\-tables} ()
+\begin{DoxyCompactList}\small\item\em Calls the the functions to draw the player1 and A\-I table. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga84e9359a75282d371df5147d92df8968}{draw\-\_\-graphical\-\_\-interface} ()
+\begin{DoxyCompactList}\small\item\em Draws all of the graphical interface of the game by calling other functions. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga77a34fc2954901da52aed534b7b0874a}{player1\-\_\-turn} ()
+\begin{DoxyCompactList}\small\item\em Starts the interrupt handler loop. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga6ccf45b205e8ea940b94f13da211036d}{A\-I\-\_\-volley} ()
+\begin{DoxyCompactList}\small\item\em 1st special attack Hits all of the squares in a randomly generated column or row \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga2daf3b99f0028c329f3a5c455e081969}{player1\-\_\-horizontal\-\_\-volley} ()
+\begin{DoxyCompactList}\small\item\em 1st special attack Hits all of the squares in a specified horizontal row \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gabb0bb8dc5c46c01a17042e09db8553e6}{player1\-\_\-vertical\-\_\-volley} ()
+\begin{DoxyCompactList}\small\item\em 1st special attack Hits all of the squares in a specified vertical row \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga6bf4095c9c593c16da8ddebf531e55dc}{A\-I\-\_\-scout} ()
+\begin{DoxyCompactList}\small\item\em 2nd special attack Searches in the table for a piece of a ship with a random id that hasn't be hit before and making it visible \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga401f37af0576f6669a67f08c659dc44e}{player1\-\_\-scout} ()
+\begin{DoxyCompactList}\small\item\em 2nd special attack Searches in the table for a piece of a ship with a random id that hasn't be hit before and making it visible \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga216f4f39820a0b7bc6f35a2944898bd6}{A\-I\-\_\-bombardement} ()
+\begin{DoxyCompactList}\small\item\em 3rd special attack Makes a explosion with the size of 3x3 square using the actual square as a middle point \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_ga4fc34db9bdb1d4fb5030be2a222c1fdd}{player1\-\_\-bombardement} ()
+\begin{DoxyCompactList}\small\item\em 3rd special attack Makes a explosion with the size of 3x3 square using the actual square as a middle point \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gabfe32fecbe0b741e14cb408a13d61a0c}{draw\-\_\-end\-\_\-of\-\_\-game} (unsigned int start, unsigned int end)
+\begin{DoxyCompactList}\small\item\em Draws a \char`\"{}you win\char`\"{} or \char`\"{}you lose\char`\"{} message and the time of the game. \end{DoxyCompactList}\item 
+void \hyperlink{group___commodore_gaa1992229d0d7d3439437765f19ffae9c}{start\-\_\-commodore} ()
+\begin{DoxyCompactList}\small\item\em Starts the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions related to the game engine and A\-I 
+
+\subsection{Function Documentation}
+\hypertarget{group___commodore_ga216f4f39820a0b7bc6f35a2944898bd6}{\index{Commmodore@{Commmodore}!A\-I\-\_\-bombardement@{A\-I\-\_\-bombardement}}
+\index{A\-I\-\_\-bombardement@{A\-I\-\_\-bombardement}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-bombardement}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-bombardement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga216f4f39820a0b7bc6f35a2944898bd6}
+
+
+3rd special attack Makes a explosion with the size of 3x3 square using the actual square as a middle point 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga6bf4095c9c593c16da8ddebf531e55dc}{\index{Commmodore@{Commmodore}!A\-I\-\_\-scout@{A\-I\-\_\-scout}}
+\index{A\-I\-\_\-scout@{A\-I\-\_\-scout}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-scout}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-scout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga6bf4095c9c593c16da8ddebf531e55dc}
+
+
+2nd special attack Searches in the table for a piece of a ship with a random id that hasn't be hit before and making it visible 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga17552681cdf74f24229557f2cc8056c0}{\index{Commmodore@{Commmodore}!A\-I\-\_\-set\-\_\-bombardement\-\_\-flag@{A\-I\-\_\-set\-\_\-bombardement\-\_\-flag}}
+\index{A\-I\-\_\-set\-\_\-bombardement\-\_\-flag@{A\-I\-\_\-set\-\_\-bombardement\-\_\-flag}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-set\-\_\-bombardement\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-set\-\_\-bombardement\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga17552681cdf74f24229557f2cc8056c0}
+
+
+Indicates that the bombardement special attack was made by the A\-I. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga2be5f22e407ffc7887adf8cc7ba5f54a}{\index{Commmodore@{Commmodore}!A\-I\-\_\-set\-\_\-scout\-\_\-flag@{A\-I\-\_\-set\-\_\-scout\-\_\-flag}}
+\index{A\-I\-\_\-set\-\_\-scout\-\_\-flag@{A\-I\-\_\-set\-\_\-scout\-\_\-flag}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-set\-\_\-scout\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-set\-\_\-scout\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga2be5f22e407ffc7887adf8cc7ba5f54a}
+
+
+Indicates that the scout special attack was made by the A\-I. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga54fcebfeda2535273c3dd47473e46b5a}{\index{Commmodore@{Commmodore}!A\-I\-\_\-set\-\_\-volley\-\_\-flag@{A\-I\-\_\-set\-\_\-volley\-\_\-flag}}
+\index{A\-I\-\_\-set\-\_\-volley\-\_\-flag@{A\-I\-\_\-set\-\_\-volley\-\_\-flag}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-set\-\_\-volley\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-set\-\_\-volley\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga54fcebfeda2535273c3dd47473e46b5a}
+
+
+Indicates that the volley special attack was made by the A\-I. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga1172507e6403996d29bfd724f618400f}{\index{Commmodore@{Commmodore}!A\-I\-\_\-turn@{A\-I\-\_\-turn}}
+\index{A\-I\-\_\-turn@{A\-I\-\_\-turn}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-turn}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga1172507e6403996d29bfd724f618400f}
+
+
+A\-I engine. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga6ccf45b205e8ea940b94f13da211036d}{\index{Commmodore@{Commmodore}!A\-I\-\_\-volley@{A\-I\-\_\-volley}}
+\index{A\-I\-\_\-volley@{A\-I\-\_\-volley}!Commmodore@{Commmodore}}
+\subsubsection[{A\-I\-\_\-volley}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-\_\-volley (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga6ccf45b205e8ea940b94f13da211036d}
+
+
+1st special attack Hits all of the squares in a randomly generated column or row 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga8149c87752bf6329fd86794fd59d6122}{\index{Commmodore@{Commmodore}!check\-\_\-number\-\_\-of\-\_\-tries@{check\-\_\-number\-\_\-of\-\_\-tries}}
+\index{check\-\_\-number\-\_\-of\-\_\-tries@{check\-\_\-number\-\_\-of\-\_\-tries}!Commmodore@{Commmodore}}
+\subsubsection[{check\-\_\-number\-\_\-of\-\_\-tries}]{\setlength{\rightskip}{0pt plus 5cm}int check\-\_\-number\-\_\-of\-\_\-tries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga8149c87752bf6329fd86794fd59d6122}
+
+
+Used as the interrupt\-\_\-handler condition terminator. 
+
+\begin{DoxyReturn}{Returns}
+number of tries 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga2f4cdc14245eec40f4c21ff2b1a42190}{\index{Commmodore@{Commmodore}!check\-\_\-player1\-\_\-destroyed\-\_\-ships@{check\-\_\-player1\-\_\-destroyed\-\_\-ships}}
+\index{check\-\_\-player1\-\_\-destroyed\-\_\-ships@{check\-\_\-player1\-\_\-destroyed\-\_\-ships}!Commmodore@{Commmodore}}
+\subsubsection[{check\-\_\-player1\-\_\-destroyed\-\_\-ships}]{\setlength{\rightskip}{0pt plus 5cm}void check\-\_\-player1\-\_\-destroyed\-\_\-ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga2f4cdc14245eec40f4c21ff2b1a42190}
+
+
+Checks if any of the player1 ships has been destroyed and if so draws the ship sprite next to the table as red. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga029a83658f8dc0ea3f744b96b68dfdb4}{\index{Commmodore@{Commmodore}!check\-\_\-player2\-\_\-destroyed\-\_\-ships@{check\-\_\-player2\-\_\-destroyed\-\_\-ships}}
+\index{check\-\_\-player2\-\_\-destroyed\-\_\-ships@{check\-\_\-player2\-\_\-destroyed\-\_\-ships}!Commmodore@{Commmodore}}
+\subsubsection[{check\-\_\-player2\-\_\-destroyed\-\_\-ships}]{\setlength{\rightskip}{0pt plus 5cm}void check\-\_\-player2\-\_\-destroyed\-\_\-ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga029a83658f8dc0ea3f744b96b68dfdb4}
+
+
+Checks if any of the A\-I ships has been destroyed and if so draws the ship sprite next to the table as red. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gad58b0a5817f6daa4c4de3af8d1c64467}{\index{Commmodore@{Commmodore}!check\-\_\-square\-\_\-keyboard@{check\-\_\-square\-\_\-keyboard}}
+\index{check\-\_\-square\-\_\-keyboard@{check\-\_\-square\-\_\-keyboard}!Commmodore@{Commmodore}}
+\subsubsection[{check\-\_\-square\-\_\-keyboard}]{\setlength{\rightskip}{0pt plus 5cm}void check\-\_\-square\-\_\-keyboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gad58b0a5817f6daa4c4de3af8d1c64467}
+
+
+Checks the square where the virtual keyboard cursor is located after receiving a \char`\"{}enter\char`\"{} scancode. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gabfe32fecbe0b741e14cb408a13d61a0c}{\index{Commmodore@{Commmodore}!draw\-\_\-end\-\_\-of\-\_\-game@{draw\-\_\-end\-\_\-of\-\_\-game}}
+\index{draw\-\_\-end\-\_\-of\-\_\-game@{draw\-\_\-end\-\_\-of\-\_\-game}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-end\-\_\-of\-\_\-game}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-end\-\_\-of\-\_\-game (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{start, }
+\item[{unsigned int}]{end}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gabfe32fecbe0b741e14cb408a13d61a0c}
+
+
+Draws a \char`\"{}you win\char`\"{} or \char`\"{}you lose\char`\"{} message and the time of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value containing R\-T\-C time in seconds when game starts \\
+\hline
+{\em int} & value containing R\-T\-C time in seconds when game ends\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga84e9359a75282d371df5147d92df8968}{\index{Commmodore@{Commmodore}!draw\-\_\-graphical\-\_\-interface@{draw\-\_\-graphical\-\_\-interface}}
+\index{draw\-\_\-graphical\-\_\-interface@{draw\-\_\-graphical\-\_\-interface}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-graphical\-\_\-interface}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-graphical\-\_\-interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga84e9359a75282d371df5147d92df8968}
+
+
+Draws all of the graphical interface of the game by calling other functions. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga59acfff76c01e88a1448d9d50a8a1461}{\index{Commmodore@{Commmodore}!draw\-\_\-letters\-\_\-numbers@{draw\-\_\-letters\-\_\-numbers}}
+\index{draw\-\_\-letters\-\_\-numbers@{draw\-\_\-letters\-\_\-numbers}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-letters\-\_\-numbers}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-letters\-\_\-numbers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga59acfff76c01e88a1448d9d50a8a1461}
+
+
+Draws the letter and number on the game tables. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga6363620f1e84e9d16a634beea93c207a}{\index{Commmodore@{Commmodore}!draw\-\_\-outline@{draw\-\_\-outline}}
+\index{draw\-\_\-outline@{draw\-\_\-outline}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-outline}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-outline (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{unsigned long}]{color}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga6363620f1e84e9d16a634beea93c207a}
+
+
+Draws an outline with a pixel thick of the color desired,starting at position (x,y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & value in screen in which the outline will begin \\
+\hline
+{\em y} & value in screen in which the outline will begin \\
+\hline
+{\em width} & of outline \\
+\hline
+{\em height} & of outline \\
+\hline
+{\em colour} & outline\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gab5c2a991d5fe4e74e967ef1696079672}{\index{Commmodore@{Commmodore}!draw\-\_\-player1\-\_\-board@{draw\-\_\-player1\-\_\-board}}
+\index{draw\-\_\-player1\-\_\-board@{draw\-\_\-player1\-\_\-board}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-player1\-\_\-board}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-player1\-\_\-board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gab5c2a991d5fe4e74e967ef1696079672}
+
+
+Draws the A\-I board where the game is going be played it initializes every position of the A\-I\-\_\-board structure it initializes every position of the A\-I\-\_\-board\-\_\-aux with the I\-D 0. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga5f0a49f9395c1235c3dc843a13c1f78d}{\index{Commmodore@{Commmodore}!draw\-\_\-player1\-\_\-board\-\_\-outline@{draw\-\_\-player1\-\_\-board\-\_\-outline}}
+\index{draw\-\_\-player1\-\_\-board\-\_\-outline@{draw\-\_\-player1\-\_\-board\-\_\-outline}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-player1\-\_\-board\-\_\-outline}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-player1\-\_\-board\-\_\-outline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga5f0a49f9395c1235c3dc843a13c1f78d}
+
+
+Draws the black outline of 5 pixels surronding the A\-I\-\_\-board. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga7a65bf64332562c5b8f84ca66e8521a7}{\index{Commmodore@{Commmodore}!draw\-\_\-player2\-\_\-board@{draw\-\_\-player2\-\_\-board}}
+\index{draw\-\_\-player2\-\_\-board@{draw\-\_\-player2\-\_\-board}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-player2\-\_\-board}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-player2\-\_\-board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga7a65bf64332562c5b8f84ca66e8521a7}
+
+
+Draws the player1 board where the A\-I is going do is shots it initializes every position of the player1\-\_\-board structure it initializes every position of the player1\-\_\-board\-\_\-aux with the I\-D 0. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga3466f1bb65e926fc83fca1e51c28b0e0}{\index{Commmodore@{Commmodore}!draw\-\_\-player2\-\_\-board\-\_\-outline@{draw\-\_\-player2\-\_\-board\-\_\-outline}}
+\index{draw\-\_\-player2\-\_\-board\-\_\-outline@{draw\-\_\-player2\-\_\-board\-\_\-outline}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-player2\-\_\-board\-\_\-outline}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-player2\-\_\-board\-\_\-outline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga3466f1bb65e926fc83fca1e51c28b0e0}
+
+
+Draws the black outline of 5 pixels surrounding the player1 board. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gadd14788da31a0cc5eb8dc65ba1748f2b}{\index{Commmodore@{Commmodore}!draw\-\_\-players@{draw\-\_\-players}}
+\index{draw\-\_\-players@{draw\-\_\-players}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-players}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-players (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gadd14788da31a0cc5eb8dc65ba1748f2b}
+
+
+Draws the \char`\"{}player 1\char`\"{} and \char`\"{}computer\char`\"{} sprites on the game. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga631033297007a02f7b6c62218f584f64}{\index{Commmodore@{Commmodore}!draw\-\_\-ships@{draw\-\_\-ships}}
+\index{draw\-\_\-ships@{draw\-\_\-ships}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-ships}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga631033297007a02f7b6c62218f584f64}
+
+
+Draws the ships that stand next to each table. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga0a8c6c066c745d104c5eb0537c8ef0e3}{\index{Commmodore@{Commmodore}!draw\-\_\-sprite@{draw\-\_\-sprite}}
+\index{draw\-\_\-sprite@{draw\-\_\-sprite}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-sprite}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-sprite (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf Sprite} $\ast$}]{spr}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga0a8c6c066c745d104c5eb0537c8ef0e3}
+
+
+draws a sprite $\ast$spr at the parameter position of the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & value in screen to be displayed the sprite pointer \\
+\hline
+{\em y} & value in screen to be displayed the sprite pointer \\
+\hline
+{\em \hyperlink{struct_sprite}{Sprite}} & pointer containing the information required to generate an image on the screen in video mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gace9f03f02d80c9da290785c2cbb10a85}{\index{Commmodore@{Commmodore}!draw\-\_\-square@{draw\-\_\-square}}
+\index{draw\-\_\-square@{draw\-\_\-square}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-square}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-square (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{unsigned}]{color}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gace9f03f02d80c9da290785c2cbb10a85}
+
+
+Draws a square at position (x,y),with the width,height and color specified as argument. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & value in screen in which the square will begin \\
+\hline
+{\em y} & value in screen in which the square will begin \\
+\hline
+{\em width} & of square \\
+\hline
+{\em height} & of square \\
+\hline
+{\em colour} & square\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga5ed850743c2cce117572f02bb913ce53}{\index{Commmodore@{Commmodore}!draw\-\_\-tables@{draw\-\_\-tables}}
+\index{draw\-\_\-tables@{draw\-\_\-tables}!Commmodore@{Commmodore}}
+\subsubsection[{draw\-\_\-tables}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga5ed850743c2cce117572f02bb913ce53}
+
+
+Calls the the functions to draw the player1 and A\-I table. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga9506fb14a5e597cecce754c1baeb64f8}{\index{Commmodore@{Commmodore}!erase\-\_\-screen@{erase\-\_\-screen}}
+\index{erase\-\_\-screen@{erase\-\_\-screen}!Commmodore@{Commmodore}}
+\subsubsection[{erase\-\_\-screen}]{\setlength{\rightskip}{0pt plus 5cm}void erase\-\_\-screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga9506fb14a5e597cecce754c1baeb64f8}
+
+
+Fills all the pixels of the screen with the color blue. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga6f7ab37f6d84f4bdc562359d8a86aa1f}{\index{Commmodore@{Commmodore}!initialize\-\_\-\-A\-I\-\_\-shot@{initialize\-\_\-\-A\-I\-\_\-shot}}
+\index{initialize\-\_\-\-A\-I\-\_\-shot@{initialize\-\_\-\-A\-I\-\_\-shot}!Commmodore@{Commmodore}}
+\subsubsection[{initialize\-\_\-\-A\-I\-\_\-shot}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\-\_\-\-A\-I\-\_\-shot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga6f7ab37f6d84f4bdc562359d8a86aa1f}
+
+
+Initializes the \hyperlink{struct_a_i__shot}{A\-I\-\_\-shot} variable. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gab4fdfb4b8f5979494e57da5386f15bd4}{\index{Commmodore@{Commmodore}!initialize\-\_\-keyboard\-\_\-cursor@{initialize\-\_\-keyboard\-\_\-cursor}}
+\index{initialize\-\_\-keyboard\-\_\-cursor@{initialize\-\_\-keyboard\-\_\-cursor}!Commmodore@{Commmodore}}
+\subsubsection[{initialize\-\_\-keyboard\-\_\-cursor}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\-\_\-keyboard\-\_\-cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gab4fdfb4b8f5979494e57da5386f15bd4}
+
+
+Initializes the virtual keyboard cursor at the position (0,0) of the A\-I board. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga4709d1c41c7f8b39baa151b117db805a}{\index{Commmodore@{Commmodore}!initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu@{initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu}}
+\index{initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu@{initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu}!Commmodore@{Commmodore}}
+\subsubsection[{initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu}]{\setlength{\rightskip}{0pt plus 5cm}void initialize\-\_\-keyboard\-\_\-cursor\-\_\-for\-\_\-menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga4709d1c41c7f8b39baa151b117db805a}
+
+
+Initializes the virtual keyboard cursor at the menu before the game starts surrounding the \char`\"{}play\char`\"{} word. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga2a0e843767aeea4f433a28b9c54f573a}{\index{Commmodore@{Commmodore}!menu@{menu}}
+\index{menu@{menu}!Commmodore@{Commmodore}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}void menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga2a0e843767aeea4f433a28b9c54f573a}
+
+
+Draws the initial menu that appears before the game. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gae2dc1b15af70aa148fee6092135a8027}{\index{Commmodore@{Commmodore}!move\-\_\-keyboard\-\_\-cursor@{move\-\_\-keyboard\-\_\-cursor}}
+\index{move\-\_\-keyboard\-\_\-cursor@{move\-\_\-keyboard\-\_\-cursor}!Commmodore@{Commmodore}}
+\subsubsection[{move\-\_\-keyboard\-\_\-cursor}]{\setlength{\rightskip}{0pt plus 5cm}void move\-\_\-keyboard\-\_\-cursor (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gae2dc1b15af70aa148fee6092135a8027}
+
+
+Moves the virtual keyboard cursor of the player2 table by redrawing the outline in the position desired and making the structure changes need to refresh the x and y saved. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value indicates in witch position to move the cursor (1-\/up $|$$|$ 2-\/left $|$$|$ 3-\/down $|$$|$ 4-\/right) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga383f6b0dd5befc32a3da3bbe13e182b3}{\index{Commmodore@{Commmodore}!place\-\_\-\-A\-I\-\_\-ships@{place\-\_\-\-A\-I\-\_\-ships}}
+\index{place\-\_\-\-A\-I\-\_\-ships@{place\-\_\-\-A\-I\-\_\-ships}!Commmodore@{Commmodore}}
+\subsubsection[{place\-\_\-\-A\-I\-\_\-ships}]{\setlength{\rightskip}{0pt plus 5cm}void place\-\_\-\-A\-I\-\_\-ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga383f6b0dd5befc32a3da3bbe13e182b3}
+
+
+Function to randomly place the A\-I ships in the A\-I table It updates the information of the A\-I\-\_\-table with 0's and 1's corresponding 0 to water and 1 to a ship It updates the A\-I\-\_\-table\-\_\-aux with the ships I\-D as it puts the ships in the table. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga8ad464df0bdc299f63d9ba4f8c434fa7}{\index{Commmodore@{Commmodore}!place\-\_\-player1\-\_\-ships@{place\-\_\-player1\-\_\-ships}}
+\index{place\-\_\-player1\-\_\-ships@{place\-\_\-player1\-\_\-ships}!Commmodore@{Commmodore}}
+\subsubsection[{place\-\_\-player1\-\_\-ships}]{\setlength{\rightskip}{0pt plus 5cm}void place\-\_\-player1\-\_\-ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga8ad464df0bdc299f63d9ba4f8c434fa7}
+
+
+Function to randomly place the player1 ships in the player1 table It updates the information of the player1\-\_\-table with 0's and 1's corresponding 0 to water and 1 to a ship It updates the player1\-\_\-table\-\_\-aux with the ships I\-D as it puts the ships in the table. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga4fc34db9bdb1d4fb5030be2a222c1fdd}{\index{Commmodore@{Commmodore}!player1\-\_\-bombardement@{player1\-\_\-bombardement}}
+\index{player1\-\_\-bombardement@{player1\-\_\-bombardement}!Commmodore@{Commmodore}}
+\subsubsection[{player1\-\_\-bombardement}]{\setlength{\rightskip}{0pt plus 5cm}void player1\-\_\-bombardement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga4fc34db9bdb1d4fb5030be2a222c1fdd}
+
+
+3rd special attack Makes a explosion with the size of 3x3 square using the actual square as a middle point 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga2daf3b99f0028c329f3a5c455e081969}{\index{Commmodore@{Commmodore}!player1\-\_\-horizontal\-\_\-volley@{player1\-\_\-horizontal\-\_\-volley}}
+\index{player1\-\_\-horizontal\-\_\-volley@{player1\-\_\-horizontal\-\_\-volley}!Commmodore@{Commmodore}}
+\subsubsection[{player1\-\_\-horizontal\-\_\-volley}]{\setlength{\rightskip}{0pt plus 5cm}void player1\-\_\-horizontal\-\_\-volley (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga2daf3b99f0028c329f3a5c455e081969}
+
+
+1st special attack Hits all of the squares in a specified horizontal row 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga401f37af0576f6669a67f08c659dc44e}{\index{Commmodore@{Commmodore}!player1\-\_\-scout@{player1\-\_\-scout}}
+\index{player1\-\_\-scout@{player1\-\_\-scout}!Commmodore@{Commmodore}}
+\subsubsection[{player1\-\_\-scout}]{\setlength{\rightskip}{0pt plus 5cm}void player1\-\_\-scout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga401f37af0576f6669a67f08c659dc44e}
+
+
+2nd special attack Searches in the table for a piece of a ship with a random id that hasn't be hit before and making it visible 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga77a34fc2954901da52aed534b7b0874a}{\index{Commmodore@{Commmodore}!player1\-\_\-turn@{player1\-\_\-turn}}
+\index{player1\-\_\-turn@{player1\-\_\-turn}!Commmodore@{Commmodore}}
+\subsubsection[{player1\-\_\-turn}]{\setlength{\rightskip}{0pt plus 5cm}void player1\-\_\-turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga77a34fc2954901da52aed534b7b0874a}
+
+
+Starts the interrupt handler loop. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gabb0bb8dc5c46c01a17042e09db8553e6}{\index{Commmodore@{Commmodore}!player1\-\_\-vertical\-\_\-volley@{player1\-\_\-vertical\-\_\-volley}}
+\index{player1\-\_\-vertical\-\_\-volley@{player1\-\_\-vertical\-\_\-volley}!Commmodore@{Commmodore}}
+\subsubsection[{player1\-\_\-vertical\-\_\-volley}]{\setlength{\rightskip}{0pt plus 5cm}void player1\-\_\-vertical\-\_\-volley (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gabb0bb8dc5c46c01a17042e09db8553e6}
+
+
+1st special attack Hits all of the squares in a specified vertical row 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gaa6b0c72b3ee0a3d97a45d38055342398}{\index{Commmodore@{Commmodore}!set\-\_\-bombardement\-\_\-flag@{set\-\_\-bombardement\-\_\-flag}}
+\index{set\-\_\-bombardement\-\_\-flag@{set\-\_\-bombardement\-\_\-flag}!Commmodore@{Commmodore}}
+\subsubsection[{set\-\_\-bombardement\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-bombardement\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gaa6b0c72b3ee0a3d97a45d38055342398}
+
+
+Indicates that the bombardement special attack was made by the player1. 
+
+
+\begin{DoxyItemize}
+\item number 4 key pressed
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga8813f78b0a4efd6f12c125064495ed59}{\index{Commmodore@{Commmodore}!set\-\_\-scout\-\_\-flag@{set\-\_\-scout\-\_\-flag}}
+\index{set\-\_\-scout\-\_\-flag@{set\-\_\-scout\-\_\-flag}!Commmodore@{Commmodore}}
+\subsubsection[{set\-\_\-scout\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-scout\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga8813f78b0a4efd6f12c125064495ed59}
+
+
+Indicates that the scout special attack was made by the player1. 
+
+
+\begin{DoxyItemize}
+\item number 3 key pressed
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_ga3110becf7dc1f5fc702fe102b34400d7}{\index{Commmodore@{Commmodore}!set\-\_\-volley\-\_\-flag@{set\-\_\-volley\-\_\-flag}}
+\index{set\-\_\-volley\-\_\-flag@{set\-\_\-volley\-\_\-flag}!Commmodore@{Commmodore}}
+\subsubsection[{set\-\_\-volley\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-volley\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_ga3110becf7dc1f5fc702fe102b34400d7}
+
+
+Indicates that the volley special attack was made by the player1. 
+
+
+\begin{DoxyItemize}
+\item number 1 or 2 key pressed
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___commodore_gaa1992229d0d7d3439437765f19ffae9c}{\index{Commmodore@{Commmodore}!start\-\_\-commodore@{start\-\_\-commodore}}
+\index{start\-\_\-commodore@{start\-\_\-commodore}!Commmodore@{Commmodore}}
+\subsubsection[{start\-\_\-commodore}]{\setlength{\rightskip}{0pt plus 5cm}void start\-\_\-commodore (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___commodore_gaa1992229d0d7d3439437765f19ffae9c}
+
+
+Starts the game. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

@@ -1,0 +1,59 @@
+\hypertarget{group___speaker}{\section{Speaker}
+\label{group___speaker}\index{Speaker@{Speaker}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___speaker_ga086f509900e66a1fe2f49bffe568a9ea}{speaker\-\_\-ctrl} (unsigned char on)
+\begin{DoxyCompactList}\small\item\em Enables/disables speaker. \end{DoxyCompactList}\item 
+int \hyperlink{group___speaker_gab5ca8500ec20d832b4e553b2afc73d51}{play\-\_\-note} (unsigned long freq, unsigned long time)
+\begin{DoxyCompactList}\small\item\em Programs speaker to generate tone for the given time interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions that control the speaker output 
+
+\subsection{Function Documentation}
+\hypertarget{group___speaker_gab5ca8500ec20d832b4e553b2afc73d51}{\index{Speaker@{Speaker}!play\-\_\-note@{play\-\_\-note}}
+\index{play\-\_\-note@{play\-\_\-note}!Speaker@{Speaker}}
+\subsubsection[{play\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}int play\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{freq, }
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}}\label{group___speaker_gab5ca8500ec20d832b4e553b2afc73d51}
+
+
+Programs speaker to generate tone for the given time interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & Frequency of tone to generate in Hz \\
+\hline
+{\em time} & Duration of tone in s \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group___speaker_ga086f509900e66a1fe2f49bffe568a9ea}{\index{Speaker@{Speaker}!speaker\-\_\-ctrl@{speaker\-\_\-ctrl}}
+\index{speaker\-\_\-ctrl@{speaker\-\_\-ctrl}!Speaker@{Speaker}}
+\subsubsection[{speaker\-\_\-ctrl}]{\setlength{\rightskip}{0pt plus 5cm}int speaker\-\_\-ctrl (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{on}
+\end{DoxyParamCaption}
+)}}\label{group___speaker_ga086f509900e66a1fe2f49bffe568a9ea}
+
+
+Enables/disables speaker. 
+
+Enables/disables speaker, by both enabling/disabling Timer 2 and its output gate
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & If zero disable speaker, otherwise enable it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

@@ -1,0 +1,162 @@
+\hypertarget{group___video__gr}{\section{Video\-\_\-gr}
+\label{group___video__gr}\index{Video\-\_\-gr@{Video\-\_\-gr}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{group___video__gr_gacef21667c79365d57a084bed994c2189}{vg\-\_\-init} (unsigned short mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+int \hyperlink{group___video__gr_ga225408a4d744af43112aa410a92d303b}{vg\-\_\-fill} (unsigned long color)
+\begin{DoxyCompactList}\small\item\em Fills the screen with the input color. \end{DoxyCompactList}\item 
+int \hyperlink{group___video__gr_ga8399aae2d2f8a89099f6724e54b5cc42}{vg\-\_\-set\-\_\-pixel} (unsigned long x, unsigned long y, unsigned long color)
+\begin{DoxyCompactList}\small\item\em Sets input pixel with input color. \end{DoxyCompactList}\item 
+long \hyperlink{group___video__gr_ga7b7c675724dbf5111fed98e705f8c639}{vg\-\_\-get\-\_\-pixel} (unsigned long x, unsigned long y)
+\begin{DoxyCompactList}\small\item\em Returns the color of the input pixel. \end{DoxyCompactList}\item 
+int \hyperlink{group___video__gr_gad0f2eebeb8a3dc1e68ed66d52c1e183f}{vg\-\_\-draw\-\_\-line} (unsigned long xi, unsigned long yi, unsigned long xf, unsigned long yf, unsigned long color)
+\begin{DoxyCompactList}\small\item\em Draw line segment with specifed end points and color. \end{DoxyCompactList}\item 
+int \hyperlink{group___video__gr_ga42f593e6656f1a978315aff02b1bcebf}{vg\-\_\-exit} (void)
+\begin{DoxyCompactList}\small\item\em Returns to default Minix 3 text mode (0x03\-: 25 x 80, 16 colors) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for outputing data to screen in graphics mode 
+
+\subsection{Function Documentation}
+\hypertarget{group___video__gr_gad0f2eebeb8a3dc1e68ed66d52c1e183f}{\index{Video\-\_\-gr@{Video\-\_\-gr}!vg\-\_\-draw\-\_\-line@{vg\-\_\-draw\-\_\-line}}
+\index{vg\-\_\-draw\-\_\-line@{vg\-\_\-draw\-\_\-line}!Video_gr@{Video\-\_\-gr}}
+\subsubsection[{vg\-\_\-draw\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}int vg\-\_\-draw\-\_\-line (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{xi, }
+\item[{unsigned long}]{yi, }
+\item[{unsigned long}]{xf, }
+\item[{unsigned long}]{yf, }
+\item[{unsigned long}]{color}
+\end{DoxyParamCaption}
+)}}\label{group___video__gr_gad0f2eebeb8a3dc1e68ed66d52c1e183f}
+
+
+Draw line segment with specifed end points and color. 
+
+Draws a line segment with the specified end points and the input color, by writing to V\-R\-A\-M
+
+
+\begin{DoxyParams}{Parameters}
+{\em xi} & horizontal coordinate of \char`\"{}first\char`\"{} endpoint, starts at 0 (leftmost pixel) \\
+\hline
+{\em yi} & vertical coordinate of \char`\"{}first\char`\"{} endpoint, starts at 0 (top pixel) \\
+\hline
+{\em xf} & horizontal coordinate of \char`\"{}last\char`\"{} endpoint, starts at 0 (leftmost pixel) \\
+\hline
+{\em yf} & vertical coordinate of \char`\"{}last\char`\"{} endpoint, starts at 0 (top pixel) \\
+\hline
+{\em color} & color of the line segment to draw \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, non-\/zero upon failure 
+\end{DoxyReturn}
+\hypertarget{group___video__gr_ga42f593e6656f1a978315aff02b1bcebf}{\index{Video\-\_\-gr@{Video\-\_\-gr}!vg\-\_\-exit@{vg\-\_\-exit}}
+\index{vg\-\_\-exit@{vg\-\_\-exit}!Video_gr@{Video\-\_\-gr}}
+\subsubsection[{vg\-\_\-exit}]{\setlength{\rightskip}{0pt plus 5cm}int vg\-\_\-exit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group___video__gr_ga42f593e6656f1a978315aff02b1bcebf}
+
+
+Returns to default Minix 3 text mode (0x03\-: 25 x 80, 16 colors) 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, non-\/zero upon failure 
+\end{DoxyReturn}
+\hypertarget{group___video__gr_ga225408a4d744af43112aa410a92d303b}{\index{Video\-\_\-gr@{Video\-\_\-gr}!vg\-\_\-fill@{vg\-\_\-fill}}
+\index{vg\-\_\-fill@{vg\-\_\-fill}!Video_gr@{Video\-\_\-gr}}
+\subsubsection[{vg\-\_\-fill}]{\setlength{\rightskip}{0pt plus 5cm}int vg\-\_\-fill (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{color}
+\end{DoxyParamCaption}
+)}}\label{group___video__gr_ga225408a4d744af43112aa410a92d303b}
+
+
+Fills the screen with the input color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color to fill the screen with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero upon failure 
+\end{DoxyReturn}
+\hypertarget{group___video__gr_ga7b7c675724dbf5111fed98e705f8c639}{\index{Video\-\_\-gr@{Video\-\_\-gr}!vg\-\_\-get\-\_\-pixel@{vg\-\_\-get\-\_\-pixel}}
+\index{vg\-\_\-get\-\_\-pixel@{vg\-\_\-get\-\_\-pixel}!Video_gr@{Video\-\_\-gr}}
+\subsubsection[{vg\-\_\-get\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}long vg\-\_\-get\-\_\-pixel (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{x, }
+\item[{unsigned long}]{y}
+\end{DoxyParamCaption}
+)}}\label{group___video__gr_ga7b7c675724dbf5111fed98e705f8c639}
+
+
+Returns the color of the input pixel. 
+
+Returns the color of the pixel at the specified position, by reading to the corresponding location in V\-R\-A\-M
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & horizontal coordinate, starts at 0 (leftmost pixel) \\
+\hline
+{\em y} & vertical coordinate, starts at 0 (top pixel) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+color of the pixel at coordinates (x,y), or -\/1 if some input argument is not valid 
+\end{DoxyReturn}
+\hypertarget{group___video__gr_gacef21667c79365d57a084bed994c2189}{\index{Video\-\_\-gr@{Video\-\_\-gr}!vg\-\_\-init@{vg\-\_\-init}}
+\index{vg\-\_\-init@{vg\-\_\-init}!Video_gr@{Video\-\_\-gr}}
+\subsubsection[{vg\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ vg\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{mode}
+\end{DoxyParamCaption}
+)}}\label{group___video__gr_gacef21667c79365d57a084bed994c2189}
+
+
+Initializes the video module in graphics mode. 
+
+Uses the V\-B\-E I\-N\-T 0x10 interface to set the desired graphics mode, maps V\-R\-A\-M to the process' address space and initializes static global variables with the resolution of the screen, and the number of colors
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 16-\/bit V\-B\-E mode to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Virtual address V\-R\-A\-M was mapped to. N\-U\-L\-L, upon failure. 
+\end{DoxyReturn}
+\hypertarget{group___video__gr_ga8399aae2d2f8a89099f6724e54b5cc42}{\index{Video\-\_\-gr@{Video\-\_\-gr}!vg\-\_\-set\-\_\-pixel@{vg\-\_\-set\-\_\-pixel}}
+\index{vg\-\_\-set\-\_\-pixel@{vg\-\_\-set\-\_\-pixel}!Video_gr@{Video\-\_\-gr}}
+\subsubsection[{vg\-\_\-set\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}int vg\-\_\-set\-\_\-pixel (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{x, }
+\item[{unsigned long}]{y, }
+\item[{unsigned long}]{color}
+\end{DoxyParamCaption}
+)}}\label{group___video__gr_ga8399aae2d2f8a89099f6724e54b5cc42}
+
+
+Sets input pixel with input color. 
+
+Sets the color of the pixel at the specified position to the input value, by writing to the corresponding location in V\-R\-A\-M
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & horizontal coordinate, starts at 0 (leftmost pixel) \\
+\hline
+{\em y} & vertical coordinate, starts at 0 (top pixel) \\
+\hline
+{\em color} & color to set the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}

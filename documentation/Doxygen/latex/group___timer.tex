@@ -1,0 +1,68 @@
+\hypertarget{group___timer}{\section{Timer}
+\label{group___timer}\index{Timer@{Timer}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___timer_gada4efbb5c88275795526fc45f0814aa3}{timer\-\_\-set\-\_\-square} (unsigned long timer, unsigned long freq)
+\begin{DoxyCompactList}\small\item\em Configures a timer to generate a square wave Used to generate frequencies used for sound emulation. \end{DoxyCompactList}\item 
+int \hyperlink{group___timer_ga915070da84f7a3baa2e0fe634cb4bcd8}{timer\-\_\-subscribe\-\_\-int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___timer_gab9eea51549744bca5c5c923b388bb4ee}{timer\-\_\-unsubscribe\-\_\-int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for the i8254 timers, mainly used to set time limits in the game 
+
+\subsection{Function Documentation}
+\hypertarget{group___timer_gada4efbb5c88275795526fc45f0814aa3}{\index{Timer@{Timer}!timer\-\_\-set\-\_\-square@{timer\-\_\-set\-\_\-square}}
+\index{timer\-\_\-set\-\_\-square@{timer\-\_\-set\-\_\-square}!Timer@{Timer}}
+\subsubsection[{timer\-\_\-set\-\_\-square}]{\setlength{\rightskip}{0pt plus 5cm}int timer\-\_\-set\-\_\-square (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{timer, }
+\item[{unsigned long}]{freq}
+\end{DoxyParamCaption}
+)}}\label{group___timer_gada4efbb5c88275795526fc45f0814aa3}
+
+
+Configures a timer to generate a square wave Used to generate frequencies used for sound emulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Timer to configure. (Ranges from 0 to 2) \\
+\hline
+{\em freq} & Frequency of the square wave tso generate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group___timer_ga915070da84f7a3baa2e0fe634cb4bcd8}{\index{Timer@{Timer}!timer\-\_\-subscribe\-\_\-int@{timer\-\_\-subscribe\-\_\-int}}
+\index{timer\-\_\-subscribe\-\_\-int@{timer\-\_\-subscribe\-\_\-int}!Timer@{Timer}}
+\subsubsection[{timer\-\_\-subscribe\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int timer\-\_\-subscribe\-\_\-int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___timer_ga915070da84f7a3baa2e0fe634cb4bcd8}
+
+
+Subscribes and enables Timer 0 interrupts. 
+
+\begin{DoxyReturn}{Returns}
+bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\hypertarget{group___timer_gab9eea51549744bca5c5c923b388bb4ee}{\index{Timer@{Timer}!timer\-\_\-unsubscribe\-\_\-int@{timer\-\_\-unsubscribe\-\_\-int}}
+\index{timer\-\_\-unsubscribe\-\_\-int@{timer\-\_\-unsubscribe\-\_\-int}!Timer@{Timer}}
+\subsubsection[{timer\-\_\-unsubscribe\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int timer\-\_\-unsubscribe\-\_\-int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___timer_gab9eea51549744bca5c5c923b388bb4ee}
+
+
+Unsubscribes Timer 0 interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

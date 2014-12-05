@@ -1,0 +1,92 @@
+\hypertarget{group___keyboard}{\section{K\-B\-D}
+\label{group___keyboard}\index{K\-B\-D@{K\-B\-D}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___keyboard_ga8732072f964bec9eb9b22254c239654d}{read\-\_\-keyboard} ()
+\begin{DoxyCompactList}\small\item\em Function thats reads S\-T\-A\-T\-S\-\_\-\-R\-E\-G for the keyboard code in the register. \end{DoxyCompactList}\item 
+void \hyperlink{group___keyboard_ga2f4098fc71cbd39422c1001d66970bf5}{keyboard\-\_\-handler} ()
+\begin{DoxyCompactList}\small\item\em Function thats reads S\-T\-A\-T\-S\-\_\-\-R\-E\-G for the keyboard code in the register. \end{DoxyCompactList}\item 
+int \hyperlink{group___keyboard_ga4ac76b0a9a73670254d5fd4c520e458f}{keyboard\-\_\-subscribe\-\_\-int} ()
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group___keyboard_gac95aea27a5e91b363b876fed881f368f}{keyboard\-\_\-unsubscribe\-\_\-int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Keyboard interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group___keyboard_ga0046038f5e6b7aa1eb7618e3407b3923}{clean\-\_\-\-O\-B\-F} ()
+\begin{DoxyCompactList}\small\item\em Cleans buffer so that no possible loss of information occurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for the keyboard driver, used for navigation purposes in the game 
+
+\subsection{Function Documentation}
+\hypertarget{group___keyboard_ga0046038f5e6b7aa1eb7618e3407b3923}{\index{K\-B\-D@{K\-B\-D}!clean\-\_\-\-O\-B\-F@{clean\-\_\-\-O\-B\-F}}
+\index{clean\-\_\-\-O\-B\-F@{clean\-\_\-\-O\-B\-F}!KBD@{K\-B\-D}}
+\subsubsection[{clean\-\_\-\-O\-B\-F}]{\setlength{\rightskip}{0pt plus 5cm}void clean\-\_\-\-O\-B\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___keyboard_ga0046038f5e6b7aa1eb7618e3407b3923}
+
+
+Cleans buffer so that no possible loss of information occurs. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group___keyboard_ga2f4098fc71cbd39422c1001d66970bf5}{\index{K\-B\-D@{K\-B\-D}!keyboard\-\_\-handler@{keyboard\-\_\-handler}}
+\index{keyboard\-\_\-handler@{keyboard\-\_\-handler}!KBD@{K\-B\-D}}
+\subsubsection[{keyboard\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}void keyboard\-\_\-handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___keyboard_ga2f4098fc71cbd39422c1001d66970bf5}
+
+
+Function thats reads S\-T\-A\-T\-S\-\_\-\-R\-E\-G for the keyboard code in the register. 
+
+\begin{DoxyReturn}{Returns}
+keyboard code in sucess; negative value on failure 
+\end{DoxyReturn}
+\hypertarget{group___keyboard_ga4ac76b0a9a73670254d5fd4c520e458f}{\index{K\-B\-D@{K\-B\-D}!keyboard\-\_\-subscribe\-\_\-int@{keyboard\-\_\-subscribe\-\_\-int}}
+\index{keyboard\-\_\-subscribe\-\_\-int@{keyboard\-\_\-subscribe\-\_\-int}!KBD@{K\-B\-D}}
+\subsubsection[{keyboard\-\_\-subscribe\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int keyboard\-\_\-subscribe\-\_\-int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___keyboard_ga4ac76b0a9a73670254d5fd4c520e458f}
+
+
+Subscribes and enables Keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+bit order in interrupt mask; negative value on failure 
+\end{DoxyReturn}
+\hypertarget{group___keyboard_gac95aea27a5e91b363b876fed881f368f}{\index{K\-B\-D@{K\-B\-D}!keyboard\-\_\-unsubscribe\-\_\-int@{keyboard\-\_\-unsubscribe\-\_\-int}}
+\index{keyboard\-\_\-unsubscribe\-\_\-int@{keyboard\-\_\-unsubscribe\-\_\-int}!KBD@{K\-B\-D}}
+\subsubsection[{keyboard\-\_\-unsubscribe\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int keyboard\-\_\-unsubscribe\-\_\-int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___keyboard_gac95aea27a5e91b363b876fed881f368f}
+
+
+Unsubscribes Keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group___keyboard_ga8732072f964bec9eb9b22254c239654d}{\index{K\-B\-D@{K\-B\-D}!read\-\_\-keyboard@{read\-\_\-keyboard}}
+\index{read\-\_\-keyboard@{read\-\_\-keyboard}!KBD@{K\-B\-D}}
+\subsubsection[{read\-\_\-keyboard}]{\setlength{\rightskip}{0pt plus 5cm}int read\-\_\-keyboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___keyboard_ga8732072f964bec9eb9b22254c239654d}
+
+
+Function thats reads S\-T\-A\-T\-S\-\_\-\-R\-E\-G for the keyboard code in the register. 
+
+\begin{DoxyReturn}{Returns}
+keyboard code in sucess; negative value on failure 
+\end{DoxyReturn}
